@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Những cô nàng dam dang</title>
+    <link rel="stylesheet" href="ncndd.css">
+</head>
+<body>
+    <div class="group">
+        <img src="headerpic.JPG">
+        <div class="title">
+            <h1>Những cô nàng dam dang</h1>
+        </div>
+    </div>
+    <div class="personal" >
+
+        <div  class="person" onclick="openPopup('minh')">
+            <img src="minh.JPG">
+            <h2>Nhật Minh</h2>
+            <p>Min</p>
+        </div>
+        <div class="person" onclick="openPopup('que')">
+            <img src="que.jpg">
+            <h2>Nguyệt Quế</h2>
+            <p>Que</p>
+        </div>
+        <div class="person" onclick="openPopup('fat')">
+            <img src="fat.jpg">
+            <h2>Thành Phát</h2>
+            <p>Fat</p>
+        </div>
+
+        <div id="minh" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('minh')">&times;</span>
+                <img src="minh.JPG">
+                <div class="info">
+                    <h2>Nhat Minh</h2>
+                    <p>min</p>
+                    <p>11/01/2005</p>
+                    <p>coder lỏ</p>
+                    <p>gật đầu tomyum</p>
+                    <a href="https://www.facebook.com/profile.php?id=100088587421624" target="_blank">
+                        <button>facebook</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="que" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('que')">&times;</span>
+                <img src="que.jpg">
+                <div class="info">
+                    <h2>Nguyet Que</h2>
+                    <p>que</p>
+                    <p>14/07/2005</p>
+                    <p>tui k bt cô làm cgi</p>
+                    <p>vk les</p>
+                    <a href="https://www.facebook.com/que.nguyen.46982" target="_blank">
+                        <button>facebook</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="fat" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('fat')">&times;</span>
+                <img src="fat.jpg">
+                <div class="info">
+                    <h2>Thanh Phat</h2>
+                    <p>fat</p>
+                    <p>16/09/2005</p>
+                    <p>đời công nhân bất công </p>
+                    <p>ck gay</p>
+                    <a href="https://www.facebook.com/phat.thanh.545849" target="_blank">
+                        <button>facebook</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script>
+       function openPopup(id) {
+    document.getElementById(id).classList.add("show");
+}
+
+function closePopup(id) {
+    document.getElementById(id).classList.remove("show");
+}
+        </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(94, 94, 239);
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.group {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.group img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.group h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0;
+    color: white;
+    opacity: 0.7;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.personal {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.person {
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    cursor:pointer;
+}
+.person img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.person h2 {
+    margin-bottom: 5px;
+
+}
+.person p {
+    color: gray;
+}
+.person:hover {
+    transform: scale(1.1);
+    background-color: rgb(48, 218, 48);
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.5s ease;
+}
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+.popup-content {
+    position: relative;
+    width: 800px;
+    padding: 90px;
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    gap:30px;
+    text-align: left;
+}
+.popup-content img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px black solid;
+}
+.popup-content button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: 2px black solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkgreen;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.info h2{
+    font-size: 40px;
+}
+.info p{
+    font-size: 25px;
+}
